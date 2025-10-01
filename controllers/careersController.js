@@ -11,6 +11,7 @@ export let getCareers = async (req,res)=>
         
     }
 }
+
 export let postNewCareers = async (req,res)=>
 {
     try {

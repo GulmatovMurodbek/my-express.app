@@ -1,9 +1,9 @@
 import express from "express"
 import dotenv from "dotenv"
-import connectDB from "./config/configeDB.js"
-import CareerRouter from "./api/career.js"
+import connectDB from "../config/configeDB.js"
+import CareerRouter from "./career.js"
 import cors from "cors"
-import ClassterRouter from "./api/classter.js"
+import ClassterRouter from "./classter.js"
 dotenv.config()
 const app = express()
 
