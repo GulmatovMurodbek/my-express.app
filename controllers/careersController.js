@@ -12,6 +12,18 @@ export let getCareers = async (req,res)=>
     }
 }
 
+// Функсияи иловагӣ барои /api/ask
+export let getCareersForAsk = async () => {
+    try {
+        let careers = await Career.find();
+        return careers; // баргардонии массив барои ask
+    } catch (error) {
+        console.error(error);
+        return [];
+    }
+}
+
+
 export let postNewCareers = async (req,res)=>
 {
     try {
